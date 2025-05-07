@@ -1,0 +1,85 @@
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    overflow: hidden;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgb(114, 209, 114), rgb(31, 95, 31));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.selector {
+    width: 100%;
+    max-width: 360px;
+}
+
+#selectField {
+    width: 100%;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    background: beige;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+#selectField img {
+    width: 20px;
+    height: 20px;
+}
+
+#list {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 6px;
+    overflow-y: auto;
+    max-height: 200px;
+}
+
+.options {
+    padding: 0;
+    list-style: none;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.options:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.options a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+}
+
+.options img {
+    width: 25px;
+    height: auto;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
